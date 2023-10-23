@@ -57,10 +57,24 @@ sudo ./AppRun
 ## Problemas encontrados y solucionados
 el descrito anteriormente, y que hay que saber como extrar ficheros AppImage, pero en el video verás todo claro y paso a paso.
 
-### 1 Errores al abrir Davinci
+### 1 Errores encontrados al abrir Davinci
 
 ```bash
-1). resolve: symbol lookup error: /lib64/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_stati c_name
+# Error 1. 
+resolve: symbol lookup error: /lib64/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_stati c_name
+
+# Error 2
+/lib/x86_64-linux-gnu/libpango-1.0.so.0: undefined symbol: g_string_free_and_steal
+
+# Fix solucion
+cd /opt/resolve/libs
+
+# check all glib libs and move to other folder
+ls -l |grep glib
+sudo mkdir _noused
+sudo mv glib _noused
+
+# Thats all, ;)
 ```
 
 ### 2 Aviso Memoria esta Full (Error memoria Nvidia GPU)
