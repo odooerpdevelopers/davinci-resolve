@@ -34,6 +34,8 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter
 ```
 
 ## Instalación Davinci Resolve 18
+
+#### Instalación Paquetes:
 La istalación no será mucho problema, solo me pidio instalar las siguientes librerias extras en el sistema
 abres un terminal ejecutas la siguiente linea y listo:
 
@@ -41,11 +43,20 @@ abres un terminal ejecutas la siguiente linea y listo:
 sudo apt install libapr1 libaprutil1 libxcb-cursor0
 
 ```
+### Descomprimir pre-instalación
+El fichero .run es un fichero tipo AppImage que la forma mas facil y práctica que encontré fue descomprimir el zip y a su vez el paquete .run:
+```bash
+# descomprimes el .zip descargado y en el mismo directorio ejecutamos:
+./DaVinci_Resolve_18.6.2_Linux.run --appimage-extract
+
+cd ./squashfs-root
+# ejecuta el asistente de instalación y sigue los pasos
+sudo ./AppRun
+```
 
 ## Problemas encontrados y solucionados
 el descrito anteriormente, y que hay que saber como extrar ficheros AppImage, pero en el video verás todo claro y paso a paso.
 
-### 1 Errores instalación
 ### 1 Errores al abrir Davinci
 
 ```bash
