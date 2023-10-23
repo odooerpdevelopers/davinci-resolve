@@ -52,10 +52,19 @@ el descrito anteriormente, y que hay que saber como extrar ficheros AppImage, pe
 1). resolve: symbol lookup error: /lib64/libgdk_pixbuf-2.0.so.0: undefined symbol: g_task_set_stati c_name
 ```
 
-### 2 Aviso Memoria esta Full (Error memoria GPU)
+### 2 Aviso Memoria esta Full (Error memoria Nvidia GPU)
+Si tienes una grafica nvidia seguro te puede aparecer este problema, 
+lo que hice fué ver un video en youtube y los pasos que indicaban son los siguientes:
+
+1. abrir en un terminal o buscador nvidia-settings
+2. Lateral Izquierda > Abajo del todo > Prime Profiles y marcar la opción (Performance Mode)
+3. Reiniciar tu PC
+
+Listo!
 
 ### 3 Error al importar videos MP4
-
+Todo este tema te recomiendo revisar el link que te dejo al final, ahi enseña como config, obs studio por ejemplo que es algo
+que uso mucho yo para hacer tutoriales, convertir videos compatibles para editarlos en Davinci, etc etc.
 
 ## Tips ayuda
 
