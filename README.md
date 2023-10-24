@@ -41,6 +41,8 @@ abres un terminal ejecutas la siguiente linea y listo:
 
 ```bash
 sudo apt install libapr1 libaprutil1 libxcb-cursor0
+# en un sistema limpio ubuntu 23.10 me pidio estas tambien
+sudo apt install libxcb-composite0 libxcb-xinerama0 libxcb-xinput0
 
 ```
 ### Descomprimir pre-instalación
@@ -72,7 +74,7 @@ cd /opt/resolve/libs
 # check all glib libs and move to other folder
 ls -l |grep glib
 sudo mkdir _noused
-sudo mv glib _noused
+sudo mv glib* _noused
 
 # Thats all, ;)
 ```
